@@ -1,7 +1,41 @@
 <!DOCTYPE html>
-<html>
+<html laang="en">
+<head>
+<meta charset="UTF-8">
+<Tittle>"Git hub pages de Santiago"</tittle>
+</head>
 <body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
+<h1>"HOLA MUNDO"   Santiago Agudelo Echeverri.</h1>
 </body>
+
+<html>
+  <head>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      google.charts.load('current', {'packages':['corechart']});
+      google.charts.setOnLoadCallback(drawChart);
+
+      function drawChart() {
+
+        var data = google.visualization.arrayToDataTable([
+          ['Prueba', 'numero uno'],
+          ['IE6',     5],
+          ['IE7',     20],
+          ['IE8',  75]         
+        ]);
+
+        var options = {
+          title: 'Datos de prueba'
+        };
+
+        var chart = new google.visualization.PieChart(document.getElementById('piechart'));
+
+        chart.draw(data, options);
+      }
+    </script>
+  </head>
+  <body>
+    <div id="piechart" style="width: 800px; height: 500px;"></div>
+  </body>
 </html>
+
